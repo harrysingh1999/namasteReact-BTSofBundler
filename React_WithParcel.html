@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React with Parcel Bundler</title>
+</head>
+<body>
+    <h1>React with Parcel</h1>
+    <div id="root"></div>
+    
+
+    <script type="module">
+        // DOM Manipulation using React without JSX
+        //Import is happening from Node Modules............
+        import React from 'react' 
+        import ReactDOM from 'react-dom/client'
+
+        const heading = React.createElement("h2", {}, "DOM Manipulation using React without JSX");
+        const root = ReactDOM.createRoot(document.querySelector("#root"));
+  
+        root.render(heading);
+      </script>
+</body>
+</html>

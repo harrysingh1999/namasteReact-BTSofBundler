@@ -9,6 +9,7 @@
     <h1>1st way of Creating React App: CDN</h1>
     <div id="root"></div>
 
+    <!-- Installing React with CDN links (not the preferred way)-->
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
@@ -18,8 +19,12 @@
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
 
-    <script src="./app.js">
-          
+    <script>
+      // DOM Manipulation using React without JSX
+      const heading = React.createElement("h2", {}, "DOM Manipulation using React without JSX");
+      const root = ReactDOM.createRoot(document.querySelector("#root"));
+
+      root.render(heading);
     </script>
   </body>
 </html>
