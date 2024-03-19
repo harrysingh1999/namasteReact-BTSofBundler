@@ -6,22 +6,22 @@
     <title>React with Parcel Bundler</title>
 </head>
 <body>
-    <h1>React with Parcel</h1>
+    <h1>React with Parcel but DOM manipulation without JSX</h1>
     <div id="root"></div>
-    
-
-    <!-- type='module' because browser script can't have imports and exports -->
+   
+    <!-- type ='module' because browser script can't have imports and exports -->
     <script type="module">
-        // DOM Manipulation using Parcel and without JSX
+        // DOM Manipulation without JSX
 
         //Import is happening from Node Modules............
         import React from 'react' 
         import ReactDOM from 'react-dom/client'
 
-        const heading = React.createElement("h2", {}, "DOM Manipulation using Parcel and without JSX");
+        const heading = React.createElement("h2", {}, "Harvinder Singh");
         const root = ReactDOM.createRoot(document.querySelector("#root"));
   
-        root.render(heading);
+        root.render(header);
+
       </script>
 </body>
 </html>

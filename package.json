@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "develop" : "parcel React_withParcel.html",
+    "build" : "parcel build React_withParcel.html"
+  },
   "devDependencies": {
     "parcel": "^2.12.0",
     "process": "^0.11.10"
@@ -6,5 +10,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
